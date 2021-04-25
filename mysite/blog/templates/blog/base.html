@@ -43,7 +43,7 @@
               <h1>
 
                 <a class="navbar-brand mr-5" href="{% url 'blog-home' %}">Django Blog</a>
-                <img src="brandlogo.png" />
+                <img src="mysite\blog\templates\blog\brandlogo.png" />
 
               </h1>
               
@@ -60,10 +60,13 @@
         </nav>
       </header>
     <!-- contetn block that helps to inherit this BASE HTML the other HTML page -->
-    <main role="main" class="container caption">
+    <main role="main" class="container">
         <div class="row">
           <div class="col-md-8">
-            {% block content %}{% endblock %}
+            <div class="caption ">
+              
+            </div>
+            
           </div>
           <!-- <div class="col-md-4">
             <div class="content-section">
@@ -90,10 +93,11 @@
 
 
   <!-- Parallex scrolling -->
+  
 
   <div class="bgimg-1">
     <div class="caption">
-    <span class="border">SCROLL DOWN</span>
+    <span class=>{% block content %}{% endblock %}</span>
     </div>
   </div>
   
@@ -126,11 +130,19 @@
     </div>
   </div>
   
-  <div class="bgimg-1">
+  <div class="bgimg-4">
     <div class="caption">
     <span class="border">COOL!</span>
     </div>
+
   </div>
+
+  <!-- PARALLEX footer, NEED FIX In progress -->
+<!-- <main></main>
+
+  <footer>
+    <p>Hello There!</p>
+  </footer> -->
 
 
 </body>

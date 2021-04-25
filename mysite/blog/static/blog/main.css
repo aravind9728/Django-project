@@ -13,7 +13,7 @@ body {
 
 /* PARALLEX SCROLLOING sTART */
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -39,10 +39,17 @@ body {
   min-height: 100%;
 }
 
+.bgimg-4 {
+  background-image: url("4.jpg");
+  min-height: 100%;
+}
+
+
+
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 1%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -65,12 +72,42 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
   }
 }
 
 /* PARALLEX SCROLLOING END */
+
+/* PARALLEX FOOTER START */
+/* main {
+  position: relative;
+  z-index: 2;
+  background: #F56469;
+  height: 1500px;
+  margin-bottom: 350px;
+  box-shadow: 3px 2px 2px 0px rgba(51,51,51,0.5);
+} */
+
+/* main p {
+  margin: 0;
+  padding-top: 100px;
+  font-size: 100px;
+  text-align: center;
+  color: #ddd; 
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 350px;  
+  padding-left: 50px;
+  background: #4B466F;
+  font-size: 100px;
+  color: #F56469;
+} */
+/* PARALLEX FOOTER END */
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
@@ -119,8 +156,10 @@ ul {
   background: #ffffff;
   padding: 10px 20px;
   border: 1px solid #dddddd;
-  border-radius: 3px;
-  margin-bottom: 20px;
+  border-radius: 100px;
+  margin-bottom: 35px;
+  margin-left: 320px;
+  margin-right: 320px;
 }
 
 
