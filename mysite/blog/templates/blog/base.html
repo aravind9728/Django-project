@@ -57,7 +57,7 @@
               <!-- Navbar Right Side -->
               <div class="navbar-nav cap">
                 <a class="nav-item nav-link" href="#">Login</a>
-                <a class="nav-item nav-link" href="#">Register</a>
+                <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
 
                 
               </div>
@@ -69,13 +69,6 @@
     <main role="main" class="container">
         <div class="row">
           <div class="col-md-8">
-            {% if messages %}
-              {% for message in messages %}
-                <div class="alert alert-{{ messages.tags }}">
-                  {{message}}
-                </div>
-              {% endfor %}  
-            {% endif %}
             <div class="caption ">
               
             </div>
@@ -110,6 +103,13 @@
 
   <div class="bgimg-1">
     <div class="caption">
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
     <span class=>{% block content %}{% endblock %}</span>
     </div>
   </div>
